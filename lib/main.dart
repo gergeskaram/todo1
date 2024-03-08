@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:todo_1/home_screen.dart';
+import 'package:todo_1/home_screen/home_screen.dart';
+import 'package:todo_1/my_theme.dart';
 import 'package:todo_1/splash_screen/splash.dart';
 
 void main() {
@@ -18,6 +19,7 @@ class MyApp extends StatelessWidget {
         Splash.routeName: (context) => Splash(),
         HomeScreen.routeName: (context) => HomeScreen(),
       },
+      theme: MyTheme.lightTheme,
     );
   }
 }
