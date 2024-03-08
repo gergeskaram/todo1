@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:todo_1/home_screen.dart';
+import 'package:todo_1/home_screen/home_screen.dart';
 
 class Splash extends StatelessWidget {
   static const String routeName = 'splash_screen';
@@ -8,7 +8,7 @@ class Splash extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Future.delayed(Duration(seconds: 10), () {
+    Future.delayed(Duration(seconds: 4), () {
       Navigator.pushReplacementNamed(context, HomeScreen.routeName);
     });
     return Scaffold(
